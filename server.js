@@ -4,8 +4,6 @@ const chat = require('./chat.js');
 const HOST = 'localhost'; // All local ip address on this machine
 const PORT = 8124;
 
-//let chat = new Chat();
-
 const server = net.createServer((c) => {
   // 'connection' listener
   chat.addConnection(c);
@@ -16,8 +14,6 @@ const server = net.createServer((c) => {
   c.on('end', () => {
     console.log('client disconnected');
   });
-  //c.write(\r\n');
-  //c.pipe(c);
 });
 server.on('error', (err) => {
   throw err;
