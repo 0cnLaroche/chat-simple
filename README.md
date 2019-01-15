@@ -1,6 +1,6 @@
 # chat-simple
 
-Super simple chat client-server application made while learning Node Net module.
+Super simple client-server Chat app made while learning NodeJS's Net module.
 
 `npm start` to run server
 
